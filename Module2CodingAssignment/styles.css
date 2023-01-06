@@ -129,6 +129,7 @@ body {
     #last {
         clear: both;
         margin: auto;
+        width: 95%;
     }
     
     .menutext {
