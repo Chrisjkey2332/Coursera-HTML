@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <link rel="stylesheet" href="styles.css">
-    <title>Food, LLC - Our Menu</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-
-                    <a class="brand" href="#">Project name</a>
-                    
-                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </a> 
-                    <!-- Everything you want hidden at 940px or less, place within here -->
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Chicken</a></li>
-                            <li class="active"><a href="#">Beef</a></li>
-                            <li class="active"><a href="#">Shrimp</a></li>
-                        </ul>
-                    </div>
-
+        <nav id="navigation" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        FOOD, LLC
+                    </a>
+                    <button type="button" id="buttonToggler" class="navbar-toggle collapsed visible" data-toggle="collapse"
+                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
-        </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav visible-xs-block text-center">
+                    <li id="navbar-li"><a href="#chicken">Chicken</a></li>
+                    <li id="navbar-li"><a href="#beef">Beef</a></li>
+                    <li id="navbar-li"><a href="#sushi">Sushi</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+
+            </div>
+        </nav>
     </header>
-    
+
+    <h1 id="mainTitle" class="text-center">Our Menu</h1>
+
+    <div class="container-fluid main-section">
+        <section class="section col-md-12 col-sm-12 col-xs-12" id="chicken">
+            <h3 class="subtitle">Chicken</h3>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste sapiente quos distinctio. 
+                Ab at repellendus necessitatibus, itaque ratione laboriosam nesciunt unde deleniti. Nisi excepturi 
+                veniam non perspiciatis blanditiis ex?</p>
+            <p class="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quo, consectetur vero eos nihil 
+                tempora possimus sapiente eius modi doloribus, repellat quaerat corporis delectus ex aliquam quisquam, 
+                nostrum sed fugit.</p>
+        </section>
+
+        <section class="section col-md-12 col-sm-12 col-xs-12" id="beef">
+            <h3 class="subtitle">Beef</h3>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea velit provident sit sapiente 
+                eligendi quidem facilis iusto amet hic itaque. Blanditiis quia in magni doloribus magnam corporis vel 
+                voluptates facere?</p>
+            <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quia sed. Suscipit eius dignissimos 
+                eos inventore. Nobis quaerat tempore accusamus quisquam, mollitia fugit quibusdam aut ex necessitatibus delectus 
+                facere id.</p>
+        </section>
+
+        <section class="section col-md-12 col-sm-12 col-xs-12" id="sushi">
+            <h3 class="subtitle">Sushi</h3>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa corrupti similique 
+                tenetur debitis ab? Commodi aliquam atque in tempore sunt harum provident, alias quis, inventore iure 
+                numquam voluptate incidunt.</p>
+            <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At cupiditate corrupti, quis culpa nihil 
+                minus repudiandae porro delectus fugit aspernatur nesciunt odit natus veritatis impedit officiis. Similique at 
+                suscipit incidunt?</p>
+        </section>
+    </div>
+
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

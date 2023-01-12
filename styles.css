@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+  #navigation {
+    background-color: #70DBB8;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
+  }
+  
+  #navigation a.navbar-brand {
+    color: slategray;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    border: solid black 1px;
+    margin: 0;
+  }
+
+  #navbar-li {
+    margin: 0px;
+  }
+  
+  #navbar li {
+    margin-bottom: 10px;
+  }
+  
+  #navbar li a:hover,
+  #navbar li a:active {
+    background-color: #CCC;
+  }
+  #navbar a {
+    color: black;
+  }
+  
+  #buttonToggler {
+    float: right;
+    width: 50px;
+    background-color: #CCC;
+    border-radius: 6px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .section {
+    height: auto;
+    background-color: palevioletred;
+    margin: 20px;
+  }
+  
+  .p {
+    color: #70DBB8;
+    padding: 20px;
+    margin-top: -19px !important;
+  }
+  
+  #mainTitle {
+    padding: 30px;
+    margin: 0px;
+    background-color: lightgray;
+  }
+
+.main-section {
+    background-color: lightgray;
+  }
+  
+  i {
+    color: white;
+    font-size: 15px;
+  }
+  
+  @media (min-width: 992px) {
+    #buttonToggler {
+      visibility: hidden !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    #buttonToggler {
+      visibility: visible !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      padding: 10px;
+      margin-left: 30px !important;
+      margin-right: 30px !important;
+      width: auto !important;
+    }
+    header {
+      width: 100%;
+    }
+  }
